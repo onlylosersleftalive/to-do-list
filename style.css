@@ -7,9 +7,9 @@
 body {
     background-image: url('images/photo_2021-04-27_16-31-26.jpg');
     background-size: cover;
-    color: whitesmoke;
+    color: black;
     font-family: 'Homemade Apple', cursive;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 header {
@@ -89,4 +89,9 @@ form button:hover {
 .delete-btn:hover {
     background: rgb(118, 165, 128);
     color: white;
+}
+
+.fa-check,
+.fa-trash-alt {
+    pointer-events: none;
 }
