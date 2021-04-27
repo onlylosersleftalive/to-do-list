@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/photo_2021-04-27_16-31-26.jpg');
+    background-size: cover;
+    color:white;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 20px;
+}
+
+header{
+    font-size: 2rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+}
+
+form button{
+    color:rgb(118, 165, 128);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background:rgb(118, 165, 128);
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
