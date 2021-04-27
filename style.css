@@ -1,49 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url('images/photo_2021-04-27_16-31-26.jpg');
     background-size: cover;
-    color:white;
+    color: whitesmoke;
     font-family: 'Homemade Apple', cursive;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
-header{
+header {
     font-size: 2rem;
 }
 
-header, form{
+header,
+form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input, form button{
+form input,
+form button {
+    border-radius: 10px;
     padding: 0.5rem;
     font-size: 1rem;
     border: none;
     background-color: white;
 }
 
-form button{
-    color:rgb(118, 165, 128);
+form button {
+    margin-left: 1rem;
+    color: rgb(118, 165, 128);
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 50%;
 }
 
-form button:hover{
-    background:rgb(118, 165, 128);
+form button:hover {
+    background: rgb(118, 165, 128);
     color: white;
 }
 
-.todo-container{
+.todo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.todo {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 20%;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.completed-btn,
+.delete-btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    font-size: 1rem;
+    border: none;
+    color: rgb(118, 165, 128);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.completed-btn:hover {
+    background: rgb(118, 165, 128);
+    color: white;
+}
+
+.delete-btn:hover {
+    background: rgb(118, 165, 128);
+    color: white;
 }
