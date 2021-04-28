@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
     background-image: url('images/photo_2021-04-27_16-31-26.jpg');
     background-size: cover;
-    color: black;
-    font-family: 'Homemade Apple', cursive;
-    font-size: 1.8rem;
+    color: #679b9b;
+    font-family: 'Homemade Apple', 'Caveat', cursive;
+    font-size: 2rem;
 }
 
 header {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 header,
@@ -94,4 +95,8 @@ form button:hover {
 .fa-check,
 .fa-trash-alt {
     pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
 }
