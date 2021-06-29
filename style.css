@@ -8,6 +8,7 @@
 body {
     background-image: url('images/photo_2021-04-27_16-31-26.jpg');
     background-size: cover;
+    background-position: center center;
     color: #679b9b;
     font-family: 'Homemade Apple', 'Caveat', cursive;
     font-size: 2rem;
@@ -15,9 +16,9 @@ body {
 
 header {
     font-size: 2.5rem;
+    text-align: center;
 }
 
-header,
 form {
     min-height: 20vh;
     display: flex;
@@ -31,7 +32,10 @@ form button {
     padding: 0.5rem;
     font-size: 1rem;
     border: none;
-    background-color: white;
+}
+
+form input {
+    width: 30%;
 }
 
 form button {
@@ -64,6 +68,7 @@ form button:hover {
 .todo-list {
     min-width: 20%;
 }
+
 
 .todo li {
     flex: 1;
@@ -99,4 +104,14 @@ form button:hover {
 
 .completed {
     text-decoration: line-through;
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    form input {
+        width: 50%;
+    }
 }
